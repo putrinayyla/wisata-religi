@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Religi - Ziarah Walisongo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Wisata Religi Walisongo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+                <li class="nav-item"><a class="nav-link" href="#alamat">Alamat</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Beranda -->
+    <section id="beranda" class="p-5 text-center">
+        <h1>Selamat Datang di Wisata Religi Walisongo</h1>
+        <p>Menelusuri jejak para wali yang menyebarkan ajaran Islam di tanah Jawa.</p>
+    </section>
+
+    <!-- Profil -->
+    <section id="profil" class="p-5 bg-light text-center">
+        <h2>Profil Wisata Religi</h2>
+        <p>Wisata religi ziarah Walisongo mengajak Anda menapak tilas perjalanan sembilan wali dalam menyebarkan agama Islam di Pulau Jawa. Tempat-tempat yang dikunjungi meliputi makam Sunan Gunung Jati, Sunan Kalijaga, Sunan Muria, dan wali lainnya.</p>
+    </section>
+
+    <!-- Layanan -->
+    <section id="layanan" class="p-5 text-center">
+        <h2>Layanan Kami</h2>
+        <ul class="list-unstyled">
+            <li>Tur Ziarah ke 9 Makam Walisongo</li>
+            <li>Pemandu Wisata Religi Berpengalaman</li>
+            <li>Transportasi dan Akomodasi</li>
+            <li>Fasilitas Makan dan Minum</li>
+            <li>"Hubungi Kami untuk Perjalanan Spiritual yang Berkesan"
+                Apakah ada pertanyaan atau bantuan yang Anda perlukan? Kami siap membantu merencanakan perjalanan ziarah Walisongo yang penuh makna dan kedamaian. Jangan ragu untuk menghubungi kami melalui formulir di bawah ini.</li>
+
+        </ul>
+    </section>
+
+    <!-- Alamat -->
+    <section id="alamat" class="p-5 text-center bg-light">
+        <h2>Alamat Lokasi</h2>
+        <p>Jl. Alun-Alun, Demak, Jawa Tengah</p>
+        <div id="map" class="map-container" style="height: 400px; width: 100%;"></div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="p-5 text-center">
+        <h2>Kontak Kami</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nama Anda" id="name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email Anda" id="email" required>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="Pesan Anda" id="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+    </section>
+
+    <footer class="text-center bg-primary text-white p-3">
+         Putri Tour Religion
+    </footer>
+
+    <!-- Mapbox untuk peta -->
+    <script src='https://wego.here.com/p/eJyNkEFLxDAUhP9KyEkhLWmbZktvsgdZF0FQvL8kb7vRbFLaFCnL%2FnfTUm8iXuYw37x5MFcKWuM40vZKHUTaZjKXu1Iw6nxH24I3eS14U90YBWOGNUlf8AKfcAFPXief9HHyk%2B%2FIE0TLyMMYwQM5osvZRj5WsLcDquDJEdTUQ0TPiKilqBg5eBM8jhYoozqRLgzzwaRHDedZs0vCCykXGCYfh3kfDCaaDLukzjhg25ux7R1obCvJAZQpslNZnKqyUBWmjlJIzZXSUhoppBI1Lt%2FWi7e53%2Br64Gy0Gty7xa8fa0xW8P8YKNro8O95yN3zgn4B2zr39PYNzJt86A%3D%3D?map=-6.6724,108.54083,16'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
